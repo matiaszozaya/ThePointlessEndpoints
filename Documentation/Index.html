@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pointless Endpoints API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Acme", serif;
+        }
+
+        code {
+            background-color: lightgray;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center">🚀</h1>
+        <h1 class="text-center fw-bolder text-primary">Pointless Endpoints</h1>
+        <h4 class="text-center text-muted mb-4">API Documentation</h4>
+
+        <h4 class="text-center text-primary">Base URL</h4>
+        <h6 class="text-center text-muted mb-4">http://thepointlessendpoints.tryasp.net</h6>
+
+        <p class="small text-center text-muted mb-4">This is just a dumb <strong>REST</strong> API. No auth. No nothing.</p>
+        
+        <div class="list-group">
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/compareBooleans</h4>
+                <p>Compares two booleans. A totally necessary feature.</p>
+                <p><strong>Parameters:</strong> first (bool), second (bool)</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/compareBooleans?first=true&second=false`).then(r => r.text()).then(d => console.log(d));
+            </code>
+
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/currentYear</h4>
+                <p>Returns the current year.</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/currentYear`).then(r => r.text()).then(d => console.log(d));
+            </code>
+            
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/isEven</h4>
+                <p>Tells you if a number is even.</p>
+                <p><strong>Parameters:</strong> number (int)</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/isEven?number=42`).then(r => r.text()).then(d => console.log(d));
+            </code>
+            
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/echo</h4>
+                <p>A true parrot of an endpoint.</p>
+                <p><strong>Parameters:</strong> message (string)</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/echo?message=Hello`).then(r => r.text()).then(d => console.log(d));
+            </code>
+            
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/divideByZero</h4>
+                <p>Do not attempt at home.</p>
+                <p><strong>Parameters:</strong> number (int)</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/divideByZero?number=1`).then(r => r.text()).then(d => console.log(d));
+            </code>
+            
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/yell</h4>
+                <p>TRY IT WITH WHATEVER MESSAGE YOU WANT.</p>
+                <p><strong>Parameters:</strong> message (string)</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/yell?message=hello`).then(r => r.text()).then(d => console.log(d));
+            </code>
+            
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/meaningOfLife</h4>
+                <p>Returns the meaning of life.</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/meaningOfLife`).then(r => r.text()).then(d => console.log(d));
+            </code>
+            
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/whyAreWeHere</h4>
+                <p>Provides a deep existential answer.</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/whyAreWeHere`).then(r => r.text()).then(d => console.log(d));
+            </code>
+            
+            <div class="list-group-item">
+                <h4 class="fw-bolder text-primary mt-3">/weatherToday</h4>
+                <p>Gives you the most reliable weather forecast."</p>
+            </div>
+
+            <code>
+                fetch(`http://thepointlessendpoints.tryasp.net/weatherToday`).then(r => r.text()).then(d => console.log(d));
+            </code>
+        </div>
+    </div>
+</body>
+</html>
